@@ -16,10 +16,10 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJT-JA-TXq">
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJT-JA-TXq">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
                         <color key="backgroundColor" red="1" green="0.62711831259999995" blue="0.51661162279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <state key="normal" backgroundImage="Nomikai">
+                        <state key="normal" image="phonto 8">
                             <color key="titleColor" red="0.92384976149999998" green="0.02427415728" blue="0.031356694359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                         </state>
                     </button>
@@ -36,6 +36,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="Nomikai" width="640" height="480"/>
+        <image name="phonto 8" width="3142" height="1080"/>
     </resources>
 </document>

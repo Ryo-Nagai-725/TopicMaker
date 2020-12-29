@@ -20,7 +20,7 @@ class HomeViewController: UIViewController {
         homeButtonView.seriousButton.addTarget(self, action: #selector(HomeViewController.tapSeriousButton(sender:)), for: .touchUpInside)
         setupTopicTableView()
         self.navigationController?.navigationBar.barTintColor = .orange
-        
+        title = "Topic Get"
     }
     @objc func tapGeneralButton(sender: Any) {
         let generalVC = GeneralViewController()
@@ -46,6 +46,7 @@ class HomeViewController: UIViewController {
         topicWebTableView.delegate = self
         topicWebTableView.dataSource = self
         topicWebTableView.register(UINib(nibName: WebTopicTableViewCell.className, bundle: nil), forCellReuseIdentifier: WebTopicTableViewCell.className)
+        topicWebTableView.layer.cornerRadius = 20.0
     }
     
     
@@ -58,6 +59,10 @@ extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let WebVC = WebViewController()
         present(WebVC, animated: true, completion: nil)
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 120
     }
 }
 
