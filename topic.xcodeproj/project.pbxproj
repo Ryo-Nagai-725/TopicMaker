@@ -28,6 +28,8 @@
 		2A639A04259AF69A00D69E63 /* WebTopicTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A639A02259AF69A00D69E63 /* WebTopicTableViewCell.xib */; };
 		2A639A08259AFBA200D69E63 /* WebViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A639A06259AFBA200D69E63 /* WebViewController.swift */; };
 		2A639A09259AFBA200D69E63 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A639A07259AFBA200D69E63 /* WebViewController.xib */; };
+		2A639A19259B552B00D69E63 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A639A17259B552B00D69E63 /* ReviewViewController.swift */; };
+		2A639A1A259B552B00D69E63 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A639A18259B552B00D69E63 /* ReviewViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -54,6 +56,8 @@
 		2A639A02259AF69A00D69E63 /* WebTopicTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebTopicTableViewCell.xib; sourceTree = "<group>"; };
 		2A639A06259AFBA200D69E63 /* WebViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebViewController.swift; sourceTree = "<group>"; };
 		2A639A07259AFBA200D69E63 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
+		2A639A17259B552B00D69E63 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
+		2A639A18259B552B00D69E63 /* ReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,18 +106,13 @@
 		2A54A8D4259AC16900792F3C /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
-				2A54A8D9259AC1C500792F3C /* HomeViewController.swift */,
-				2A54A8DA259AC1C500792F3C /* HomeViewController.xib */,
-				2A1ECF5B259AE0500060FCC3 /* GeneralViewController.swift */,
-				2A1ECF5C259AE0500060FCC3 /* GeneralViewController.xib */,
-				2A1ECF60259AE06A0060FCC3 /* PartyViewController.swift */,
-				2A1ECF61259AE06A0060FCC3 /* PartyViewController.xib */,
-				2A1ECF65259AE08A0060FCC3 /* CoupleViewController.swift */,
-				2A1ECF66259AE08A0060FCC3 /* CoupleViewController.xib */,
-				2A1ECF6A259AE0A40060FCC3 /* SeriousViewController.swift */,
-				2A1ECF6B259AE0A40060FCC3 /* SeriousViewController.xib */,
-				2A639A06259AFBA200D69E63 /* WebViewController.swift */,
-				2A639A07259AFBA200D69E63 /* WebViewController.xib */,
+				2A639A0B259B525E00D69E63 /* Home */,
+				2A639A0E259B527100D69E63 /* General */,
+				2A639A0F259B527D00D69E63 /* Party */,
+				2A639A11259B529600D69E63 /* Couple */,
+				2A639A13259B52A000D69E63 /* Serious */,
+				2A639A15259B52B200D69E63 /* Web */,
+				2A639A1C259B553D00D69E63 /* Review */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -142,6 +141,69 @@
 				2A6399FE259AF53E00D69E63 /* NSObjectExt.swift */,
 			);
 			path = Extension;
+			sourceTree = "<group>";
+		};
+		2A639A0B259B525E00D69E63 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2A54A8D9259AC1C500792F3C /* HomeViewController.swift */,
+				2A54A8DA259AC1C500792F3C /* HomeViewController.xib */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		2A639A0E259B527100D69E63 /* General */ = {
+			isa = PBXGroup;
+			children = (
+				2A1ECF5B259AE0500060FCC3 /* GeneralViewController.swift */,
+				2A1ECF5C259AE0500060FCC3 /* GeneralViewController.xib */,
+			);
+			path = General;
+			sourceTree = "<group>";
+		};
+		2A639A0F259B527D00D69E63 /* Party */ = {
+			isa = PBXGroup;
+			children = (
+				2A1ECF60259AE06A0060FCC3 /* PartyViewController.swift */,
+				2A1ECF61259AE06A0060FCC3 /* PartyViewController.xib */,
+			);
+			path = Party;
+			sourceTree = "<group>";
+		};
+		2A639A11259B529600D69E63 /* Couple */ = {
+			isa = PBXGroup;
+			children = (
+				2A1ECF65259AE08A0060FCC3 /* CoupleViewController.swift */,
+				2A1ECF66259AE08A0060FCC3 /* CoupleViewController.xib */,
+			);
+			path = Couple;
+			sourceTree = "<group>";
+		};
+		2A639A13259B52A000D69E63 /* Serious */ = {
+			isa = PBXGroup;
+			children = (
+				2A1ECF6A259AE0A40060FCC3 /* SeriousViewController.swift */,
+				2A1ECF6B259AE0A40060FCC3 /* SeriousViewController.xib */,
+			);
+			path = Serious;
+			sourceTree = "<group>";
+		};
+		2A639A15259B52B200D69E63 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				2A639A06259AFBA200D69E63 /* WebViewController.swift */,
+				2A639A07259AFBA200D69E63 /* WebViewController.xib */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		2A639A1C259B553D00D69E63 /* Review */ = {
+			isa = PBXGroup;
+			children = (
+				2A639A17259B552B00D69E63 /* ReviewViewController.swift */,
+				2A639A18259B552B00D69E63 /* ReviewViewController.xib */,
+			);
+			path = Review;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -208,6 +270,7 @@
 				2A1ECF6D259AE0A40060FCC3 /* SeriousViewController.xib in Resources */,
 				2A54A8C7259AC11A00792F3C /* Assets.xcassets in Resources */,
 				2A1ECF68259AE08B0060FCC3 /* CoupleViewController.xib in Resources */,
+				2A639A1A259B552B00D69E63 /* ReviewViewController.xib in Resources */,
 				2A639A04259AF69A00D69E63 /* WebTopicTableViewCell.xib in Resources */,
 				2A54A8DC259AC1C500792F3C /* HomeViewController.xib in Resources */,
 				2A54A8EE259ACCFF00792F3C /* HomeButtonView.xib in Resources */,
@@ -223,6 +286,7 @@
 			files = (
 				2A54A8BE259AC11900792F3C /* AppDelegate.swift in Sources */,
 				2A639A08259AFBA200D69E63 /* WebViewController.swift in Sources */,
+				2A639A19259B552B00D69E63 /* ReviewViewController.swift in Sources */,
 				2A1ECF67259AE08B0060FCC3 /* CoupleViewController.swift in Sources */,
 				2A1ECF62259AE06A0060FCC3 /* PartyViewController.swift in Sources */,
 				2A6399FF259AF53E00D69E63 /* NSObjectExt.swift in Sources */,

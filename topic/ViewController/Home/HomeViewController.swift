@@ -11,6 +11,7 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var topicWebTableView: UITableView!
     @IBOutlet weak var homeButtonView: HomeButtonView!
+    var settingBarButtonItem: UIBarButtonItem!
     override func viewDidLoad() {
         super.viewDidLoad()
         homeButtonView.cornerRadius()
@@ -21,7 +22,17 @@ class HomeViewController: UIViewController {
         setupTopicTableView()
         self.navigationController?.navigationBar.barTintColor = .orange
         title = "Topic Get"
+        
+        settingBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(settingBarButtonTapped(_:)))
+        
+        self.navigationItem.rightBarButtonItems = [settingBarButtonItem]
     }
+    @objc func settingBarButtonTapped(_ sender: UIBarButtonItem) {
+            let reviewVC = ReviewViewController()
+            present(reviewVC, animated: true, completion: nil)
+        
+        }
+    
     @objc func tapGeneralButton(sender: Any) {
         let generalVC = GeneralViewController()
         present(generalVC, animated: true, completion: nil)
