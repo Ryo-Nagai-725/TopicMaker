@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="HomeViewController" customModule="topic" customModuleProvider="target">
+            <connections>
+                <outlet property="homeButtonView" destination="bH1-PI-kJx" id="ohw-eB-gIB"/>
+                <outlet property="topicWebTableView" destination="rRB-lv-84K" id="TPK-cO-Oi3"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="rRB-lv-84K">
+                    <rect key="frame" x="20" y="87" width="374" height="153"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="153" id="GkU-es-Q3p"/>
+                    </constraints>
+                </tableView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bH1-PI-kJx" customClass="HomeButtonView" customModule="topic" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="319" width="414" height="509"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                </view>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="話題カテゴリー" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fQL-Ry-2G5">
+                    <rect key="frame" x="20" y="268" width="334" height="21"/>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                    <nil key="textColor"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Tp9-pv-fCj">
+                    <rect key="frame" x="20" y="297" width="374" height="2"/>
+                    <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="374" id="oUh-D6-nYK"/>
+                        <constraint firstAttribute="height" constant="2" id="qMr-og-yRh"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="rRB-lv-84K" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="43" id="3H0-47-Jtl"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="bH1-PI-kJx" secondAttribute="bottom" constant="34" id="5Jj-cb-qf2"/>
+                <constraint firstItem="bH1-PI-kJx" firstAttribute="top" secondItem="rRB-lv-84K" secondAttribute="bottom" constant="79" id="ArQ-Pd-lTh"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="bH1-PI-kJx" secondAttribute="trailing" id="QjA-Y2-WL6"/>
+                <constraint firstItem="fQL-Ry-2G5" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="RxX-tD-89t"/>
+                <constraint firstItem="Tp9-pv-fCj" firstAttribute="leading" secondItem="fQL-Ry-2G5" secondAttribute="leading" id="bvO-Br-frk"/>
+                <constraint firstItem="bH1-PI-kJx" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="dWa-Fs-tZk"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="rRB-lv-84K" secondAttribute="trailing" constant="20" id="dax-mF-3CG"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="fQL-Ry-2G5" secondAttribute="trailing" constant="60" id="giT-tG-Lif"/>
+                <constraint firstItem="Tp9-pv-fCj" firstAttribute="top" secondItem="fQL-Ry-2G5" secondAttribute="bottom" constant="8" symbolic="YES" id="gtu-Md-hva"/>
+                <constraint firstItem="rRB-lv-84K" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="pmo-z8-COV"/>
+                <constraint firstItem="fQL-Ry-2G5" firstAttribute="top" secondItem="rRB-lv-84K" secondAttribute="bottom" constant="28" id="skf-Wd-WTE"/>
+                <constraint firstItem="bH1-PI-kJx" firstAttribute="top" secondItem="fQL-Ry-2G5" secondAttribute="bottom" constant="30" id="xEy-bX-yjl"/>
+            </constraints>
+            <point key="canvasLocation" x="95.200000000000003" y="95.320197044334975"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
