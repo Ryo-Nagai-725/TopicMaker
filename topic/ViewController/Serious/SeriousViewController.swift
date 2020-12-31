@@ -8,7 +8,7 @@
 import UIKit
 
 class SeriousViewController: UIViewController {
-
+    
     @IBOutlet weak var topicView: UIView!
     @IBOutlet weak var topicLabel: UILabel!
     @IBOutlet weak var nextTopicButton: UIButton!
@@ -17,9 +17,9 @@ class SeriousViewController: UIViewController {
         super.viewDidLoad()
         randamTopic()
         cornerRadius()
-
-       
-            
+        
+        
+        
     }
     
     func randamTopic() {
@@ -33,8 +33,8 @@ class SeriousViewController: UIViewController {
         topicView.layer.cornerRadius = 20.0
     }
     
-
-
+    
+    
     
     @IBAction func tapNextTopic(_ sender: Any) {
         randamTopic()

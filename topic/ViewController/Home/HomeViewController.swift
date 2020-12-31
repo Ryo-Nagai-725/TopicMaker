@@ -11,21 +11,18 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var topicWebTableView: UITableView!
     @IBOutlet weak var homeButtonView: HomeButtonView!
-    var settingBarButtonItem: UIBarButtonItem!
+   let WebList = ["話題スロット", "話題提供ツール", "ランダム単語ガチャ"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         homeButtonView.cornerRadius()
+        setupTopicTableView()
+        setupNavi()
         homeButtonView.generalButton.addTarget(self, action: #selector(HomeViewController.tapGeneralButton(sender:)), for: .touchUpInside)
         homeButtonView.partyButton.addTarget(self, action: #selector(HomeViewController.tapPartyButton(sender:)), for: .touchUpInside)
         homeButtonView.coupleButton.addTarget(self, action: #selector(HomeViewController.tapCoupleButton(sender:)), for: .touchUpInside)
         homeButtonView.seriousButton.addTarget(self, action: #selector(HomeViewController.tapSeriousButton(sender:)), for: .touchUpInside)
-        setupTopicTableView()
-        self.navigationController?.navigationBar.barTintColor = .orange
-        title = "Topic Get"
         
-        settingBarButtonItem = UIBarButtonItem(barButtonSystemItem: .bookmarks, target: self, action: #selector(settingBarButtonTapped(_:)))
-        
-        self.navigationItem.rightBarButtonItems = [settingBarButtonItem]
     }
     @objc func settingBarButtonTapped(_ sender: UIBarButtonItem) {
             let reviewVC = ReviewViewController()
@@ -52,6 +49,11 @@ class HomeViewController: UIViewController {
         present(SeriousVC, animated: true, completion: nil)
     }
     
+    func setupNavi() {
+        self.navigationController?.navigationBar.barTintColor = .orange
+        self.navigationItem.titleView = UIImageView(image:UIImage(named:"phonto 13"))
+    }
+    
     func setupTopicTableView() {
         
         topicWebTableView.delegate = self
@@ -68,9 +70,19 @@ class HomeViewController: UIViewController {
 
 extension HomeViewController: UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let WebVC = WebViewController()
-        present(WebVC, animated: true, completion: nil)
+        if indexPath.row == 0 {
+            let WebVC = WebViewController()
+            present(WebVC, animated: true, completion: nil)
+        }else if indexPath.row == 1 {
+            let Web2VC = WebView2Controller()
+            present(Web2VC, animated: true, completion: nil)
+        }else if indexPath.row == 2 {
+            let Web3VC = WebView3Controller()
+            present(Web3VC, animated: true, completion: nil)
+        
     }
+    }
+        
     
     func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
         return 120
@@ -79,17 +91,29 @@ extension HomeViewController: UITableViewDelegate {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 2
+        return WebList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let webTopicTableView = tableView.dequeueReusableCell(withIdentifier: WebTopicTableViewCell.className, for: indexPath) as? WebTopicTableViewCell else {
+        guard let webTopicTableViewCell = tableView.dequeueReusableCell(withIdentifier: WebTopicTableViewCell.className, for: indexPath) as? WebTopicTableViewCell else {
             return UITableViewCell()
         }
+        if indexPath.section == 0 {
+            webTopicTableViewCell.nameLabel.text = "\(WebList[indexPath.row])"
+        }else if indexPath.section == 1 {
+            webTopicTableViewCell.nameLabel.text = "\(WebList[indexPath.row])"
+        }else if indexPath.section == 2 {
+            webTopicTableViewCell.nameLabel.text = "\(WebList[indexPath.row])"
+            
+           
+        }
+        webTopicTableViewCell.selectionStyle = .none
         
-        return webTopicTableView
+        
+        return webTopicTableViewCell
     }
     
-    
-    
+    func tableView(_ tableView: UITableView, shouldHighlightRowAt indexPath: IndexPath) -> Bool {
+            true
+        }
 }
