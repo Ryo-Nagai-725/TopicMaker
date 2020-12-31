@@ -30,6 +30,10 @@
 		2A639A09259AFBA200D69E63 /* WebViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A639A07259AFBA200D69E63 /* WebViewController.xib */; };
 		2A639A19259B552B00D69E63 /* ReviewViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A639A17259B552B00D69E63 /* ReviewViewController.swift */; };
 		2A639A1A259B552B00D69E63 /* ReviewViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A639A18259B552B00D69E63 /* ReviewViewController.xib */; };
+		2A8929BA259DCF0300351AAD /* WebView2Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8929B8259DCF0300351AAD /* WebView2Controller.swift */; };
+		2A8929BB259DCF0300351AAD /* WebView2Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8929B9259DCF0300351AAD /* WebView2Controller.xib */; };
+		2A8929BF259DCF1B00351AAD /* WebView3Controller.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A8929BD259DCF1B00351AAD /* WebView3Controller.swift */; };
+		2A8929C0259DCF1B00351AAD /* WebView3Controller.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A8929BE259DCF1B00351AAD /* WebView3Controller.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +62,10 @@
 		2A639A07259AFBA200D69E63 /* WebViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebViewController.xib; sourceTree = "<group>"; };
 		2A639A17259B552B00D69E63 /* ReviewViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReviewViewController.swift; sourceTree = "<group>"; };
 		2A639A18259B552B00D69E63 /* ReviewViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ReviewViewController.xib; sourceTree = "<group>"; };
+		2A8929B8259DCF0300351AAD /* WebView2Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView2Controller.swift; sourceTree = "<group>"; };
+		2A8929B9259DCF0300351AAD /* WebView2Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebView2Controller.xib; sourceTree = "<group>"; };
+		2A8929BD259DCF1B00351AAD /* WebView3Controller.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView3Controller.swift; sourceTree = "<group>"; };
+		2A8929BE259DCF1B00351AAD /* WebView3Controller.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = WebView3Controller.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,6 +201,10 @@
 			children = (
 				2A639A06259AFBA200D69E63 /* WebViewController.swift */,
 				2A639A07259AFBA200D69E63 /* WebViewController.xib */,
+				2A8929B8259DCF0300351AAD /* WebView2Controller.swift */,
+				2A8929B9259DCF0300351AAD /* WebView2Controller.xib */,
+				2A8929BD259DCF1B00351AAD /* WebView3Controller.swift */,
+				2A8929BE259DCF1B00351AAD /* WebView3Controller.xib */,
 			);
 			path = Web;
 			sourceTree = "<group>";
@@ -265,12 +277,14 @@
 			files = (
 				2A54A8CA259AC11A00792F3C /* LaunchScreen.storyboard in Resources */,
 				2A1ECF63259AE06A0060FCC3 /* PartyViewController.xib in Resources */,
+				2A8929BB259DCF0300351AAD /* WebView2Controller.xib in Resources */,
 				2A1ECF5E259AE0500060FCC3 /* GeneralViewController.xib in Resources */,
 				2A639A09259AFBA200D69E63 /* WebViewController.xib in Resources */,
 				2A1ECF6D259AE0A40060FCC3 /* SeriousViewController.xib in Resources */,
 				2A54A8C7259AC11A00792F3C /* Assets.xcassets in Resources */,
 				2A1ECF68259AE08B0060FCC3 /* CoupleViewController.xib in Resources */,
 				2A639A1A259B552B00D69E63 /* ReviewViewController.xib in Resources */,
+				2A8929C0259DCF1B00351AAD /* WebView3Controller.xib in Resources */,
 				2A639A04259AF69A00D69E63 /* WebTopicTableViewCell.xib in Resources */,
 				2A54A8DC259AC1C500792F3C /* HomeViewController.xib in Resources */,
 				2A54A8EE259ACCFF00792F3C /* HomeButtonView.xib in Resources */,
@@ -293,7 +307,9 @@
 				2A639A03259AF69A00D69E63 /* WebTopicTableViewCell.swift in Sources */,
 				2A54A8C0259AC11900792F3C /* SceneDelegate.swift in Sources */,
 				2A1ECF5D259AE0500060FCC3 /* GeneralViewController.swift in Sources */,
+				2A8929BF259DCF1B00351AAD /* WebView3Controller.swift in Sources */,
 				2A54A8DB259AC1C500792F3C /* HomeViewController.swift in Sources */,
+				2A8929BA259DCF0300351AAD /* WebView2Controller.swift in Sources */,
 				2A54A8E7259ACC9700792F3C /* HomeButtonView.swift in Sources */,
 				2A1ECF6C259AE0A40060FCC3 /* SeriousViewController.swift in Sources */,
 			);

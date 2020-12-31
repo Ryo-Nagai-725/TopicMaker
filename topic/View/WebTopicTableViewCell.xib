@@ -4,6 +4,7 @@
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
@@ -16,26 +17,43 @@
                 <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
-                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NJT-JA-TXq">
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lvp-c4-rZG">
+                        <rect key="frame" x="16" y="11" width="288" height="88"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="話題スロット" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FIe-RN-sBy">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="110"/>
-                        <color key="backgroundColor" red="1" green="0.62711831259999995" blue="0.51661162279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        <state key="normal" image="phonto 8">
-                            <color key="titleColor" red="0.92384976149999998" green="0.02427415728" blue="0.031356694359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
-                        </state>
-                    </button>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="22"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
                 </subviews>
                 <constraints>
-                    <constraint firstItem="NJT-JA-TXq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Anb-PO-3uF"/>
-                    <constraint firstAttribute="trailing" secondItem="NJT-JA-TXq" secondAttribute="trailing" id="VF1-oH-fdn"/>
-                    <constraint firstItem="NJT-JA-TXq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="e8R-xU-kz4"/>
-                    <constraint firstAttribute="bottom" secondItem="NJT-JA-TXq" secondAttribute="bottom" id="e8j-oc-2tt"/>
+                    <constraint firstItem="FIe-RN-sBy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="0HN-C1-blH"/>
+                    <constraint firstItem="FIe-RN-sBy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Bgp-qr-Kzb"/>
+                    <constraint firstItem="lvp-c4-rZG" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="CZP-at-9Rl"/>
+                    <constraint firstItem="lvp-c4-rZG" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="11" id="CcE-6k-YH7"/>
+                    <constraint firstAttribute="bottom" secondItem="FIe-RN-sBy" secondAttribute="bottom" id="PAY-Pv-9dM"/>
+                    <constraint firstAttribute="trailing" secondItem="FIe-RN-sBy" secondAttribute="trailing" id="RUL-uT-cUZ"/>
+                    <constraint firstAttribute="bottom" secondItem="FIe-RN-sBy" secondAttribute="bottom" id="Vn4-ij-YHw"/>
+                    <constraint firstAttribute="trailing" secondItem="FIe-RN-sBy" secondAttribute="trailing" id="Xe4-h4-cOH"/>
+                    <constraint firstAttribute="trailing" secondItem="lvp-c4-rZG" secondAttribute="trailing" constant="16" id="gb9-QN-LCs"/>
+                    <constraint firstItem="FIe-RN-sBy" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="kM2-2O-RqZ"/>
+                    <constraint firstAttribute="bottom" secondItem="lvp-c4-rZG" secondAttribute="bottom" constant="11" id="oDx-o7-Mtd"/>
+                    <constraint firstItem="FIe-RN-sBy" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="sKL-mc-9cy"/>
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="View" destination="lvp-c4-rZG" id="62g-dQ-YJa"/>
+                <outlet property="nameLabel" destination="FIe-RN-sBy" id="uyX-u0-Lhe"/>
+            </connections>
             <point key="canvasLocation" x="89.855072463768124" y="67.633928571428569"/>
         </tableViewCell>
     </objects>
     <resources>
-        <image name="phonto 8" width="3142" height="1080"/>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
     </resources>
 </document>

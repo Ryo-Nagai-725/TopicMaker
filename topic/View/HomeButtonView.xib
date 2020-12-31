@@ -66,7 +66,7 @@
                         <constraint firstAttribute="width" constant="170" id="gQ3-We-by7"/>
                     </constraints>
                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
-                    <state key="normal" title="真剣" backgroundImage="Serious">
+                    <state key="normal" title="真面目" backgroundImage="Serious">
                         <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     </state>
                 </button>

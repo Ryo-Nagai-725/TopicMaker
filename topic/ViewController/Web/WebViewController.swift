@@ -13,9 +13,8 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        let url = "https://theme.mononichi.com/about.html"
+        let url = "https://slot-maker.com/slot/17240/"
         let request = URLRequest(url: URL(string: url)!)
-                // リクエストをロードする
         webView.load(request)
     }
 
