@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CategoryViewController" customModule="topic" customModuleProvider="target">
+            <connections>
+                <outlet property="familyButton" destination="W4L-eo-CAC" id="Fzw-cn-Q8i"/>
+                <outlet property="friendButton" destination="Fbd-w9-irP" id="1Pp-aW-HaZ"/>
+                <outlet property="interViewButton" destination="5De-E7-3ba" id="85b-WW-Tc4"/>
+                <outlet property="scrollView" destination="CDx-qI-xh7" id="eoc-Fx-Voh"/>
+                <outlet property="titleLabel" destination="qt7-Dt-6f6" id="cFi-pD-5Jt"/>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oQS-SF-PXI">
+                    <rect key="frame" x="26" y="803" width="56" height="47"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                    <state key="normal" image="arrowshape.turn.up.left.fill" catalog="system">
+                        <preferredSymbolConfiguration key="preferredSymbolConfiguration" configurationType="pointSize" pointSize="45"/>
+                    </state>
+                    <connections>
+                        <action selector="tapBackButton:" destination="-1" eventType="touchUpInside" id="ZDV-4k-bJb"/>
+                    </connections>
+                </button>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="面接練習" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt7-Dt-6f6">
+                    <rect key="frame" x="53" y="143" width="309" height="36"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="36" id="24T-2i-km8"/>
+                        <constraint firstAttribute="width" constant="309" id="gTm-7o-OLn"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                    <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <nil key="highlightedColor"/>
+                </label>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" pagingEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDx-qI-xh7">
+                    <rect key="frame" x="53" y="228" width="309" height="529"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-X7-vgc">
+                            <rect key="frame" x="0.0" y="0.0" width="946" height="499"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5De-E7-3ba">
+                                    <rect key="frame" x="8" y="8" width="291" height="448"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemTealColor"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <state key="normal" backgroundImage="job-interview-2078021_1920">
+                                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="W4L-eo-CAC">
+                                    <rect key="frame" x="631" y="8" width="291" height="448"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" red="0.92384976149999998" green="0.02427415728" blue="0.031356694359999999" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <state key="normal" backgroundImage="family-1635049_1920"/>
+                                </button>
+                                <button opaque="NO" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Fbd-w9-irP">
+                                    <rect key="frame" x="328" y="8" width="291" height="448"/>
+                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    <color key="backgroundColor" systemColor="systemYellowColor"/>
+                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                    <state key="normal" backgroundImage="people-2295052_1920">
+                                        <color key="titleShadowColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="499" id="V5H-Sn-LG0"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="PMn-X7-vgc" firstAttribute="bottom" secondItem="avM-vr-oya" secondAttribute="bottom" id="IKz-hB-h5T"/>
+                        <constraint firstItem="PMn-X7-vgc" firstAttribute="width" secondItem="g3O-rj-bLR" secondAttribute="width" multiplier="3.06149" id="QZo-Vf-tXk"/>
+                        <constraint firstItem="PMn-X7-vgc" firstAttribute="top" secondItem="avM-vr-oya" secondAttribute="top" id="QnU-De-PDd"/>
+                        <constraint firstItem="PMn-X7-vgc" firstAttribute="leading" secondItem="avM-vr-oya" secondAttribute="leading" id="txJ-WS-tBH"/>
+                        <constraint firstItem="PMn-X7-vgc" firstAttribute="trailing" secondItem="avM-vr-oya" secondAttribute="trailing" id="ytE-Vu-h6Y"/>
+                    </constraints>
+                    <viewLayoutGuide key="contentLayoutGuide" id="avM-vr-oya"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="g3O-rj-bLR"/>
+                </scrollView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <color key="tintColor" red="0.97473818059999995" green="0.72429060940000001" blue="0.36853003499999998" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="CDx-qI-xh7" secondAttribute="bottom" constant="105" id="2ql-wV-PZD"/>
+                <constraint firstItem="CDx-qI-xh7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="53" id="NEj-GV-KRB"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CDx-qI-xh7" secondAttribute="trailing" constant="52" id="NKX-W8-aZx"/>
+                <constraint firstItem="CDx-qI-xh7" firstAttribute="top" secondItem="qt7-Dt-6f6" secondAttribute="bottom" constant="49" id="SES-Er-fAZ"/>
+                <constraint firstItem="qt7-Dt-6f6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="99" id="i67-9y-Rd7"/>
+                <constraint firstItem="qt7-Dt-6f6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="53" id="wdw-nN-nq3"/>
+            </constraints>
+            <point key="canvasLocation" x="89.855072463768124" y="71.651785714285708"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="arrowshape.turn.up.left.fill" catalog="system" width="128" height="106"/>
+        <image name="family-1635049_1920" width="1280" height="1920"/>
+        <image name="job-interview-2078021_1920" width="1440" height="1920"/>
+        <image name="people-2295052_1920" width="1440" height="1920"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemTealColor">
+            <color red="0.35294117647058826" green="0.78431372549019607" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemYellowColor">
+            <color red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

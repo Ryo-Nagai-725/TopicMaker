@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -18,11 +18,11 @@
         </placeholder>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
-            <rect key="frame" x="0.0" y="0.0" width="390" height="844"/>
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="couple-690047_1920" translatesAutoresizingMaskIntoConstraints="NO" id="CQU-ch-1Qs">
-                    <rect key="frame" x="0.0" y="123" width="390" height="687"/>
+                    <rect key="frame" x="0.0" y="123" width="414" height="739"/>
                 </imageView>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3OT-MZ-UQ8">
                     <rect key="frame" x="20" y="71" width="188" height="42"/>
@@ -35,7 +35,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YNM-8k-KCc">
-                    <rect key="frame" x="74" y="652" width="242" height="67"/>
+                    <rect key="frame" x="74" y="704" width="266" height="67"/>
                     <color key="backgroundColor" red="1" green="0.62711831259999995" blue="0.51661162279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="67" id="XsI-7d-xrV"/>
@@ -49,10 +49,10 @@
                     </connections>
                 </button>
                 <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4nG-3Q-k3T">
-                    <rect key="frame" x="20" y="275" width="350" height="191"/>
+                    <rect key="frame" x="20" y="275" width="374" height="191"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近楽しいことは？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="emb-dm-wUv">
-                            <rect key="frame" x="0.0" y="0.0" width="350" height="191"/>
+                            <rect key="frame" x="20" y="18" width="334" height="156"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="textColor"/>
@@ -61,11 +61,10 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="emb-dm-wUv" firstAttribute="top" secondItem="4nG-3Q-k3T" secondAttribute="top" id="1hU-7V-65w"/>
-                        <constraint firstAttribute="bottom" secondItem="emb-dm-wUv" secondAttribute="bottom" id="9DJ-n7-ytM"/>
-                        <constraint firstItem="emb-dm-wUv" firstAttribute="leading" secondItem="4nG-3Q-k3T" secondAttribute="leading" id="DDv-eh-62R"/>
+                        <constraint firstItem="emb-dm-wUv" firstAttribute="top" secondItem="4nG-3Q-k3T" secondAttribute="top" constant="18" id="1hU-7V-65w"/>
+                        <constraint firstAttribute="bottom" secondItem="emb-dm-wUv" secondAttribute="bottom" constant="17" id="9DJ-n7-ytM"/>
+                        <constraint firstItem="emb-dm-wUv" firstAttribute="leading" secondItem="4nG-3Q-k3T" secondAttribute="leading" constant="20" id="DDv-eh-62R"/>
                         <constraint firstItem="emb-dm-wUv" firstAttribute="centerX" secondItem="4nG-3Q-k3T" secondAttribute="centerX" id="MYo-6r-xgT"/>
-                        <constraint firstAttribute="trailing" secondItem="emb-dm-wUv" secondAttribute="trailing" id="kWT-6M-XX9"/>
                         <constraint firstAttribute="height" constant="191" id="te0-KX-US4"/>
                     </constraints>
                 </view>
@@ -86,7 +85,7 @@
                 <constraint firstItem="4nG-3Q-k3T" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="uhA-e8-uTc"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="YNM-8k-KCc" secondAttribute="trailing" constant="74" id="vbB-fw-a2k"/>
             </constraints>
-            <point key="canvasLocation" x="95.652173913043484" y="89.732142857142847"/>
+            <point key="canvasLocation" x="95.384615384615387" y="89.5734597156398"/>
         </view>
     </objects>
     <resources>

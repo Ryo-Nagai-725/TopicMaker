@@ -9,16 +9,18 @@ import UIKit
 
 class WebTopicTableViewCell: UITableViewCell {
     
-    @IBOutlet var View: UIView!
-    @IBOutlet var nameLabel: UILabel!
-    override func awakeFromNib() {
+
+    @IBOutlet var contentsImageView: UIImageView!
+    
+   override func awakeFromNib() {
         super.awakeFromNib()
-        
+    
     }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
-        View.layer.cornerRadius = 20.0
+        contentsImageView.clipsToBounds = true
+        contentsImageView.layer.cornerRadius = 12.0
         // Configure the view for the selected state
     }
     

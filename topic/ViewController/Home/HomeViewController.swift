@@ -11,13 +11,14 @@ class HomeViewController: UIViewController {
     
     @IBOutlet weak var topicWebTableView: UITableView!
     @IBOutlet weak var homeButtonView: HomeButtonView!
-   let WebList = ["話題スロット", "話題提供ツール", "ランダム単語ガチャ"]
+   let contentsList = ["phonto 22", "phonto 21", "phonto 20"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
         homeButtonView.cornerRadius()
         setupTopicTableView()
         setupNavi()
+        self.overrideUserInterfaceStyle = .light
         homeButtonView.generalButton.addTarget(self, action: #selector(HomeViewController.tapGeneralButton(sender:)), for: .touchUpInside)
         homeButtonView.partyButton.addTarget(self, action: #selector(HomeViewController.tapPartyButton(sender:)), for: .touchUpInside)
         homeButtonView.coupleButton.addTarget(self, action: #selector(HomeViewController.tapCoupleButton(sender:)), for: .touchUpInside)
@@ -47,6 +48,12 @@ class HomeViewController: UIViewController {
     @objc func tapSeriousButton(sender: Any) {
         let SeriousVC = SeriousViewController()
         present(SeriousVC, animated: true, completion: nil)
+    }
+    @IBAction func tapAddButton(_ sender: Any) {
+        let categoryVC: CategoryViewController = CategoryViewController()
+        let navigationVC = UINavigationController(rootViewController: categoryVC)
+        navigationVC.modalPresentationStyle = .fullScreen
+        self.present(navigationVC, animated: true, completion: nil)
     }
     
     func setupNavi() {
@@ -91,7 +98,7 @@ extension HomeViewController: UITableViewDelegate {
 
 extension HomeViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return WebList.count
+        return contentsList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -99,11 +106,11 @@ extension HomeViewController: UITableViewDataSource {
             return UITableViewCell()
         }
         if indexPath.section == 0 {
-            webTopicTableViewCell.nameLabel.text = "\(WebList[indexPath.row])"
+            webTopicTableViewCell.contentsImageView.image = UIImage(named: "\(contentsList[indexPath.row])")
         }else if indexPath.section == 1 {
-            webTopicTableViewCell.nameLabel.text = "\(WebList[indexPath.row])"
+            webTopicTableViewCell.contentsImageView.image = UIImage(named: "\(contentsList[indexPath.row])")
         }else if indexPath.section == 2 {
-            webTopicTableViewCell.nameLabel.text = "\(WebList[indexPath.row])"
+            webTopicTableViewCell.contentsImageView.image = UIImage(named: "\(contentsList[indexPath.row])")
             
            
         }

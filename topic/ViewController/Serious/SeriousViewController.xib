@@ -38,7 +38,7 @@
                     <rect key="frame" x="20" y="373" width="374" height="191"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近楽しいことは？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SsN-ul-J49">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="191"/>
+                            <rect key="frame" x="17" y="19" width="340" height="153"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="textColor"/>
@@ -47,11 +47,11 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="SsN-ul-J49" firstAttribute="top" secondItem="XV0-dt-GA4" secondAttribute="top" id="1ds-Is-kfY"/>
+                        <constraint firstItem="SsN-ul-J49" firstAttribute="top" secondItem="XV0-dt-GA4" secondAttribute="top" constant="19" id="1ds-Is-kfY"/>
                         <constraint firstAttribute="height" constant="191" id="7oF-xe-BRD"/>
-                        <constraint firstAttribute="bottom" secondItem="SsN-ul-J49" secondAttribute="bottom" id="Ngm-D1-FOb"/>
-                        <constraint firstItem="SsN-ul-J49" firstAttribute="leading" secondItem="XV0-dt-GA4" secondAttribute="leading" id="cM4-Iu-rKa"/>
-                        <constraint firstAttribute="trailing" secondItem="SsN-ul-J49" secondAttribute="trailing" id="maC-VN-RVO"/>
+                        <constraint firstAttribute="bottom" secondItem="SsN-ul-J49" secondAttribute="bottom" constant="19" id="Ngm-D1-FOb"/>
+                        <constraint firstItem="SsN-ul-J49" firstAttribute="leading" secondItem="XV0-dt-GA4" secondAttribute="leading" constant="17" id="cM4-Iu-rKa"/>
+                        <constraint firstAttribute="trailing" secondItem="SsN-ul-J49" secondAttribute="trailing" constant="17" id="maC-VN-RVO"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DAv-NX-4YQ">

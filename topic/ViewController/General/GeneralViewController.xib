@@ -38,7 +38,7 @@
                     <rect key="frame" x="20" y="224" width="335" height="215"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近楽しいことは？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7j4-m5-DcG">
-                            <rect key="frame" x="0.0" y="0.0" width="335" height="215"/>
+                            <rect key="frame" x="17" y="18" width="300" height="179"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="textColor"/>
@@ -48,11 +48,11 @@
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="215" id="8bG-ei-WOn"/>
-                        <constraint firstItem="7j4-m5-DcG" firstAttribute="leading" secondItem="dVz-ws-qOi" secondAttribute="leading" id="CN6-4C-McC"/>
-                        <constraint firstAttribute="bottom" secondItem="7j4-m5-DcG" secondAttribute="bottom" id="CUR-Bd-1FZ"/>
-                        <constraint firstAttribute="trailing" secondItem="7j4-m5-DcG" secondAttribute="trailing" id="QuQ-re-t05"/>
-                        <constraint firstItem="7j4-m5-DcG" firstAttribute="width" secondItem="dVz-ws-qOi" secondAttribute="width" id="lcN-JS-45E"/>
-                        <constraint firstItem="7j4-m5-DcG" firstAttribute="top" secondItem="dVz-ws-qOi" secondAttribute="top" id="q9J-n8-GlI"/>
+                        <constraint firstItem="7j4-m5-DcG" firstAttribute="leading" secondItem="dVz-ws-qOi" secondAttribute="leading" constant="17" id="CN6-4C-McC"/>
+                        <constraint firstAttribute="bottom" secondItem="7j4-m5-DcG" secondAttribute="bottom" constant="18" id="CUR-Bd-1FZ"/>
+                        <constraint firstAttribute="trailing" secondItem="7j4-m5-DcG" secondAttribute="trailing" constant="18" id="QuQ-re-t05"/>
+                        <constraint firstItem="7j4-m5-DcG" firstAttribute="width" secondItem="dVz-ws-qOi" secondAttribute="width" constant="-35" id="lcN-JS-45E"/>
+                        <constraint firstItem="7j4-m5-DcG" firstAttribute="top" secondItem="dVz-ws-qOi" secondAttribute="top" constant="18" id="q9J-n8-GlI"/>
                     </constraints>
                 </view>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dkg-dc-8dD">
@@ -83,7 +83,7 @@
                 <constraint firstItem="eWr-7J-qca" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="27" id="wV1-gD-waR"/>
                 <constraint firstItem="CdU-Hz-RAp" firstAttribute="top" secondItem="eWr-7J-qca" secondAttribute="bottom" constant="10" id="zaS-Ce-31C"/>
             </constraints>
-            <point key="canvasLocation" x="89.855072463768124" y="71.651785714285708"/>
+            <point key="canvasLocation" x="88.799999999999997" y="71.514242878560722"/>
         </view>
     </objects>
     <resources>

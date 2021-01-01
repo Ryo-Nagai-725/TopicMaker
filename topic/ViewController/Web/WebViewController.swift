@@ -13,6 +13,7 @@ class WebViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
         let url = "https://slot-maker.com/slot/17240/"
         let request = URLRequest(url: URL(string: url)!)
         webView.load(request)

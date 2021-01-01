@@ -52,7 +52,7 @@
                     <rect key="frame" x="20" y="274" width="374" height="191"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近楽しいことは？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CoH-En-8uh">
-                            <rect key="frame" x="0.0" y="0.0" width="374" height="191"/>
+                            <rect key="frame" x="13" y="16" width="347" height="158"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="textColor"/>
@@ -61,10 +61,10 @@
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstItem="CoH-En-8uh" firstAttribute="leading" secondItem="ySE-J4-jm0" secondAttribute="leading" id="739-wM-rgI"/>
-                        <constraint firstAttribute="bottom" secondItem="CoH-En-8uh" secondAttribute="bottom" id="7LO-MY-D0r"/>
-                        <constraint firstAttribute="trailing" secondItem="CoH-En-8uh" secondAttribute="trailing" id="kIc-si-qw7"/>
-                        <constraint firstItem="CoH-En-8uh" firstAttribute="top" secondItem="ySE-J4-jm0" secondAttribute="top" id="uiH-ip-uPx"/>
+                        <constraint firstItem="CoH-En-8uh" firstAttribute="leading" secondItem="ySE-J4-jm0" secondAttribute="leading" constant="13" id="739-wM-rgI"/>
+                        <constraint firstAttribute="bottom" secondItem="CoH-En-8uh" secondAttribute="bottom" constant="17" id="7LO-MY-D0r"/>
+                        <constraint firstAttribute="trailing" secondItem="CoH-En-8uh" secondAttribute="trailing" constant="14" id="kIc-si-qw7"/>
+                        <constraint firstItem="CoH-En-8uh" firstAttribute="top" secondItem="ySE-J4-jm0" secondAttribute="top" constant="16" id="uiH-ip-uPx"/>
                         <constraint firstAttribute="height" constant="191" id="xla-fB-Pex"/>
                     </constraints>
                 </view>

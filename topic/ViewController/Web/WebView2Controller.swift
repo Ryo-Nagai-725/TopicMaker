@@ -12,6 +12,7 @@ class WebView2Controller: UIViewController {
     @IBOutlet var webView: WKWebView!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
         let url = "https://shindanmaker.com/450943"
         let request = URLRequest(url: URL(string: url)!)
         webView.load(request)
