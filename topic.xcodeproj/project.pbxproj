@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A1EB36225A1E70100183FF8 /* InterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1EB36025A1E70100183FF8 /* InterViewController.swift */; };
+		2A1EB36325A1E70100183FF8 /* InterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1EB36125A1E70100183FF8 /* InterViewController.xib */; };
+		2A1EB36725A1E77A00183FF8 /* FriendViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1EB36525A1E77A00183FF8 /* FriendViewController.swift */; };
+		2A1EB36825A1E77A00183FF8 /* FriendViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1EB36625A1E77A00183FF8 /* FriendViewController.xib */; };
+		2A1EB36C25A1E7DE00183FF8 /* familyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1EB36A25A1E7DE00183FF8 /* familyViewController.swift */; };
+		2A1EB36D25A1E7DE00183FF8 /* familyViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1EB36B25A1E7DE00183FF8 /* familyViewController.xib */; };
 		2A1ECF5D259AE0500060FCC3 /* GeneralViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1ECF5B259AE0500060FCC3 /* GeneralViewController.swift */; };
 		2A1ECF5E259AE0500060FCC3 /* GeneralViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2A1ECF5C259AE0500060FCC3 /* GeneralViewController.xib */; };
 		2A1ECF62259AE06A0060FCC3 /* PartyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A1ECF60259AE06A0060FCC3 /* PartyViewController.swift */; };
@@ -41,6 +47,12 @@
 
 /* Begin PBXFileReference section */
 		02ADACB6B7F33740870AAD03 /* Pods-topic.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-topic.debug.xcconfig"; path = "Target Support Files/Pods-topic/Pods-topic.debug.xcconfig"; sourceTree = "<group>"; };
+		2A1EB36025A1E70100183FF8 /* InterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterViewController.swift; sourceTree = "<group>"; };
+		2A1EB36125A1E70100183FF8 /* InterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = InterViewController.xib; sourceTree = "<group>"; };
+		2A1EB36525A1E77A00183FF8 /* FriendViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FriendViewController.swift; sourceTree = "<group>"; };
+		2A1EB36625A1E77A00183FF8 /* FriendViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FriendViewController.xib; sourceTree = "<group>"; };
+		2A1EB36A25A1E7DE00183FF8 /* familyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = familyViewController.swift; sourceTree = "<group>"; };
+		2A1EB36B25A1E7DE00183FF8 /* familyViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = familyViewController.xib; sourceTree = "<group>"; };
 		2A1ECF5B259AE0500060FCC3 /* GeneralViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GeneralViewController.swift; sourceTree = "<group>"; };
 		2A1ECF5C259AE0500060FCC3 /* GeneralViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GeneralViewController.xib; sourceTree = "<group>"; };
 		2A1ECF60259AE06A0060FCC3 /* PartyViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PartyViewController.swift; sourceTree = "<group>"; };
@@ -235,6 +247,12 @@
 			children = (
 				2A8929CC259F318300351AAD /* CategoryViewController.swift */,
 				2A8929CD259F318300351AAD /* CategoryViewController.xib */,
+				2A1EB36025A1E70100183FF8 /* InterViewController.swift */,
+				2A1EB36125A1E70100183FF8 /* InterViewController.xib */,
+				2A1EB36525A1E77A00183FF8 /* FriendViewController.swift */,
+				2A1EB36625A1E77A00183FF8 /* FriendViewController.xib */,
+				2A1EB36A25A1E7DE00183FF8 /* familyViewController.swift */,
+				2A1EB36B25A1E7DE00183FF8 /* familyViewController.xib */,
 			);
 			path = "Add category";
 			sourceTree = "<group>";
@@ -315,17 +333,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A1EB36825A1E77A00183FF8 /* FriendViewController.xib in Resources */,
 				2A8929CF259F318300351AAD /* CategoryViewController.xib in Resources */,
 				2A54A8CA259AC11A00792F3C /* LaunchScreen.storyboard in Resources */,
 				2A1ECF63259AE06A0060FCC3 /* PartyViewController.xib in Resources */,
 				2A8929BB259DCF0300351AAD /* WebView2Controller.xib in Resources */,
 				2A1ECF5E259AE0500060FCC3 /* GeneralViewController.xib in Resources */,
 				2A639A09259AFBA200D69E63 /* WebViewController.xib in Resources */,
+				2A1EB36D25A1E7DE00183FF8 /* familyViewController.xib in Resources */,
 				2A1ECF6D259AE0A40060FCC3 /* SeriousViewController.xib in Resources */,
 				2A54A8C7259AC11A00792F3C /* Assets.xcassets in Resources */,
 				2A1ECF68259AE08B0060FCC3 /* CoupleViewController.xib in Resources */,
 				2A639A1A259B552B00D69E63 /* ReviewViewController.xib in Resources */,
 				2A8929C0259DCF1B00351AAD /* WebView3Controller.xib in Resources */,
+				2A1EB36325A1E70100183FF8 /* InterViewController.xib in Resources */,
 				2A639A04259AF69A00D69E63 /* WebTopicTableViewCell.xib in Resources */,
 				2A54A8DC259AC1C500792F3C /* HomeViewController.xib in Resources */,
 				2A54A8EE259ACCFF00792F3C /* HomeButtonView.xib in Resources */,
@@ -386,7 +407,10 @@
 				2A639A19259B552B00D69E63 /* ReviewViewController.swift in Sources */,
 				2A1ECF67259AE08B0060FCC3 /* CoupleViewController.swift in Sources */,
 				2A1ECF62259AE06A0060FCC3 /* PartyViewController.swift in Sources */,
+				2A1EB36225A1E70100183FF8 /* InterViewController.swift in Sources */,
+				2A1EB36725A1E77A00183FF8 /* FriendViewController.swift in Sources */,
 				2A6399FF259AF53E00D69E63 /* NSObjectExt.swift in Sources */,
+				2A1EB36C25A1E7DE00183FF8 /* familyViewController.swift in Sources */,
 				2A639A03259AF69A00D69E63 /* WebTopicTableViewCell.swift in Sources */,
 				2A54A8C0259AC11900792F3C /* SceneDelegate.swift in Sources */,
 				2A1ECF5D259AE0500060FCC3 /* GeneralViewController.swift in Sources */,

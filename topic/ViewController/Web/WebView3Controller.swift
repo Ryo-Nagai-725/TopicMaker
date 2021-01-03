@@ -6,21 +6,34 @@
 //
 
 import UIKit
-import WebKit
 class WebView3Controller: UIViewController {
 
-    @IBOutlet var webView: WKWebView!
+    @IBOutlet var topicView: UIView!
+    @IBOutlet var topicLabel: UILabel!
+    @IBOutlet var nextTopicButton: UIButton!
+    let QuestList = ["一番近くの自動販売機でジュースを買ってきて！", "穴の空いた靴下で一日過ごす", "1日携帯を使うな！！", "家の周り一周", "二度寝禁止", "家族全員に挨拶", "おつかいに行く"]
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         self.overrideUserInterfaceStyle = .light
-        let url = "https://tango-gacha.com"
-        let request = URLRequest(url: URL(string: url)!)
-        webView.load(request)
+        QuestViewTopic()
+        cornerRadius()
 
        
     }
 
-
-  
-
+    @IBAction func tapNextTopicButton(_ sender: Any) {
+        QuestViewTopic()
+        
+        
+    }
+    func QuestViewTopic() {
+        let randomParty = QuestList.randomElement()
+        topicLabel.text = randomParty
+    }
+    
+    func cornerRadius() {
+        nextTopicButton.layer.cornerRadius = 20.0
+        topicView.layer.cornerRadius = 20.0
+    }
 }

@@ -16,6 +16,7 @@ class CategoryViewController: UIViewController {
     @IBOutlet var titleLabel: UILabel!
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.overrideUserInterfaceStyle = .light
         cornerRadius()
         setupNavi()
         setupScrollView()
@@ -44,8 +45,20 @@ class CategoryViewController: UIViewController {
         scrollView.delegate = self
     }
 
-
- 
+    @IBAction func tapInterViewButton(_ sender: Any) {
+        let interVC = InterViewController()
+        present(interVC, animated: true, completion: nil)
+    }
+    
+    @IBAction func tapFriendButton(_ sender: Any) {
+        let friendVC = FriendViewController()
+        present(friendVC, animated: true, completion: nil)
+    }
+    @IBAction func tapFamilyButton(_ sender: Any) {
+        let familyVC = familyViewController()
+        present(familyVC, animated: true, completion: nil)
+    }
+    
 }
 
 
@@ -56,13 +69,6 @@ extension CategoryViewController: UIScrollViewDelegate {
         print("width = \(scrollView.bounds.width)")
         print("page = \(scrollView.contentOffset.x / scrollView.bounds.width)")
         
-        if scrollView.contentOffset.x / scrollView.bounds.width == 0 {
-            titleLabel.text = "面接練習"
-        }else if scrollView.contentOffset.x / scrollView.bounds.width == 1 {
-            titleLabel.text = "友人"
-        }else if scrollView.contentOffset.x / scrollView.bounds.width == 2 {
-            titleLabel.text = "家族"
-        }
 }
     
 }
