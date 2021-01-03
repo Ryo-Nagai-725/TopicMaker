@@ -21,14 +21,16 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="people-2603943_1920" translatesAutoresizingMaskIntoConstraints="NO" id="8Sa-fx-ch9">
-                    <rect key="frame" x="0.0" y="105" width="414" height="739"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="people-2603943_1920" translatesAutoresizingMaskIntoConstraints="NO" id="8Sa-fx-ch9">
+                    <rect key="frame" x="0.0" y="123" width="414" height="739"/>
                 </imageView>
-                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq5-Rg-OGu">
-                    <rect key="frame" x="74" y="695" width="266" height="66"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hq5-Rg-OGu">
+                    <rect key="frame" x="74" y="713" width="266" height="66"/>
                     <color key="backgroundColor" red="1" green="0.62711831259999995" blue="0.51661162279999995" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="66" id="aF6-RA-6lG"/>
+                        <constraint firstAttribute="width" constant="266" id="cmI-MU-Qmb"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="system" weight="black" pointSize="30"/>
                     <state key="normal" title="次のトピック">
                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -37,13 +39,11 @@
                         <action selector="tapNextTopicButton:" destination="-1" eventType="touchUpInside" id="5Nr-Ge-S8Z"/>
                     </connections>
                 </button>
-                <view alpha="0.89999997615814209" contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="epp-ce-2gH">
-                    <rect key="frame" x="20" y="256" width="374" height="191"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <view alpha="0.89999997615814209" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="epp-ce-2gH">
+                    <rect key="frame" x="20" y="274" width="374" height="191"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="最近楽しいことは？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-UB-24U">
-                            <rect key="frame" x="17" y="16" width="340" height="158"/>
-                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="最近楽しいことは？" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6hh-UB-24U">
+                            <rect key="frame" x="17" y="17" width="340" height="157"/>
                             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                             <nil key="textColor"/>
@@ -51,10 +51,21 @@
                         </label>
                     </subviews>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="6hh-UB-24U" firstAttribute="top" secondItem="epp-ce-2gH" secondAttribute="top" constant="17" id="I0p-Vo-Exa"/>
+                        <constraint firstItem="6hh-UB-24U" firstAttribute="leading" secondItem="epp-ce-2gH" secondAttribute="leading" constant="17" id="Jf6-LA-52q"/>
+                        <constraint firstAttribute="bottom" secondItem="6hh-UB-24U" secondAttribute="bottom" constant="17" id="MWH-5x-UhI"/>
+                        <constraint firstAttribute="height" constant="191" id="SQE-0j-kqE"/>
+                        <constraint firstAttribute="width" constant="374" id="fPP-AL-iQT"/>
+                        <constraint firstAttribute="trailing" secondItem="6hh-UB-24U" secondAttribute="trailing" constant="17" id="ihC-JI-FyZ"/>
+                    </constraints>
                 </view>
-                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03i-oE-vWG">
-                    <rect key="frame" x="20" y="53" width="188" height="42"/>
-                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Topic" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="03i-oE-vWG">
+                    <rect key="frame" x="20" y="71" width="188" height="42"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="188" id="dvA-aa-aoi"/>
+                        <constraint firstAttribute="height" constant="42" id="l4h-7g-aYl"/>
+                    </constraints>
                     <fontDescription key="fontDescription" type="boldSystem" pointSize="35"/>
                     <nil key="textColor"/>
                     <nil key="highlightedColor"/>
@@ -62,6 +73,20 @@
             </subviews>
             <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="Hq5-Rg-OGu" secondAttribute="bottom" constant="83" id="0S4-0Y-Tqc"/>
+                <constraint firstItem="epp-ce-2gH" firstAttribute="top" secondItem="03i-oE-vWG" secondAttribute="bottom" constant="161" id="5km-Gf-5eb"/>
+                <constraint firstItem="03i-oE-vWG" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="27" id="AO3-nR-OfG"/>
+                <constraint firstItem="Hq5-Rg-OGu" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="74" id="EVH-7X-oD1"/>
+                <constraint firstItem="8Sa-fx-ch9" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="RKv-bx-msW"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="epp-ce-2gH" secondAttribute="trailing" constant="20" id="j2v-qc-aze"/>
+                <constraint firstItem="03i-oE-vWG" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="kV6-A1-1Ca"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="Hq5-Rg-OGu" secondAttribute="trailing" constant="74" id="mv7-Zi-g0n"/>
+                <constraint firstItem="8Sa-fx-ch9" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" id="qnT-Yb-RBi"/>
+                <constraint firstItem="8Sa-fx-ch9" firstAttribute="top" secondItem="03i-oE-vWG" secondAttribute="bottom" constant="10" id="vUR-EH-MnB"/>
+                <constraint firstItem="epp-ce-2gH" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="20" id="w6Q-DU-KZD"/>
+                <constraint firstItem="8Sa-fx-ch9" firstAttribute="bottom" secondItem="fnl-2z-Ty3" secondAttribute="bottom" id="yHf-1d-7x8"/>
+            </constraints>
             <point key="canvasLocation" x="95.652173913043484" y="71.651785714285708"/>
         </view>
     </objects>
