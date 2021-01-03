@@ -33,7 +33,7 @@
                     </connections>
                 </button>
                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="タップで選択" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qt7-Dt-6f6">
-                    <rect key="frame" x="53" y="143" width="309" height="36"/>
+                    <rect key="frame" x="53" y="84" width="309" height="36"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="36" id="24T-2i-km8"/>
                         <constraint firstAttribute="width" constant="309" id="gTm-7o-OLn"/>
@@ -43,7 +43,7 @@
                     <nil key="highlightedColor"/>
                 </label>
                 <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" directionalLockEnabled="YES" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" translatesAutoresizingMaskIntoConstraints="NO" id="CDx-qI-xh7">
-                    <rect key="frame" x="53" y="228" width="361" height="529"/>
+                    <rect key="frame" x="53" y="151" width="361" height="644"/>
                     <subviews>
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PMn-X7-vgc">
                             <rect key="frame" x="0.0" y="0.0" width="966" height="499"/>
@@ -109,12 +109,12 @@
             <constraints>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="oQS-SF-PXI" secondAttribute="bottom" constant="12" id="BGY-NC-nPR"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="CDx-qI-xh7" secondAttribute="trailing" id="XXp-TJ-VnL"/>
-                <constraint firstItem="CDx-qI-xh7" firstAttribute="top" secondItem="qt7-Dt-6f6" secondAttribute="bottom" constant="49" id="ale-To-z5a"/>
+                <constraint firstItem="CDx-qI-xh7" firstAttribute="top" secondItem="qt7-Dt-6f6" secondAttribute="bottom" constant="31" id="ale-To-z5a"/>
                 <constraint firstItem="oQS-SF-PXI" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="26" id="h82-KT-VWy"/>
-                <constraint firstItem="qt7-Dt-6f6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="99" id="i67-9y-Rd7"/>
+                <constraint firstItem="qt7-Dt-6f6" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="40" id="i67-9y-Rd7"/>
                 <constraint firstItem="CDx-qI-xh7" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="53" id="uOv-pV-J43"/>
                 <constraint firstItem="qt7-Dt-6f6" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="53" id="wdw-nN-nq3"/>
-                <constraint firstItem="oQS-SF-PXI" firstAttribute="top" secondItem="CDx-qI-xh7" secondAttribute="bottom" constant="46" id="zTR-dc-4fj"/>
+                <constraint firstItem="oQS-SF-PXI" firstAttribute="top" secondItem="CDx-qI-xh7" secondAttribute="bottom" constant="8" id="zTR-dc-4fj"/>
             </constraints>
             <point key="canvasLocation" x="89.855072463768124" y="71.651785714285708"/>
         </view>

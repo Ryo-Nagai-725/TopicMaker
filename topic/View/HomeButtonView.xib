@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
-    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <device id="retina5_9" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -44,7 +44,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <button opaque="NO" alpha="0.90000000000000002" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yet-iy-kEv" customClass="SpringButton" customModule="Spring">
-                    <rect key="frame" x="20" y="267" width="170" height="170"/>
+                    <rect key="frame" x="20" y="262" width="170" height="170"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="170" id="R1B-4M-u8A"/>
@@ -90,7 +90,7 @@
                     </userDefinedRuntimeAttributes>
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Oxb-5h-NS6" customClass="SpringButton" customModule="Spring">
-                    <rect key="frame" x="224" y="267" width="170" height="170"/>
+                    <rect key="frame" x="224" y="261" width="170" height="170"/>
                     <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="170" id="FAA-XA-2yq"/>
@@ -117,15 +117,13 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="7si-Hw-ij7" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="0Jd-i8-qUL"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Yet-iy-kEv" secondAttribute="bottom" constant="76" id="GQR-aL-lok"/>
-                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Oxb-5h-NS6" secondAttribute="bottom" constant="76" id="JSS-kj-VFV"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Yet-iy-kEv" secondAttribute="bottom" constant="47" id="GQR-aL-lok"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="Oxb-5h-NS6" secondAttribute="bottom" constant="48" id="JSS-kj-VFV"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="Oxb-5h-NS6" secondAttribute="trailing" constant="20" id="Qqy-Gp-77R"/>
                 <constraint firstItem="7si-Hw-ij7" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="SCi-Up-aF3"/>
                 <constraint firstItem="Yet-iy-kEv" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="20" id="sxQ-ac-bcl"/>
                 <constraint firstItem="T8Q-fL-HB8" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="xbI-SP-772"/>
-                <constraint firstItem="T8Q-fL-HB8" firstAttribute="leading" secondItem="7si-Hw-ij7" secondAttribute="trailing" constant="34" id="y4Z-q4-EZd"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="T8Q-fL-HB8" secondAttribute="trailing" constant="20" id="y9B-5g-5nx"/>
-                <constraint firstItem="Oxb-5h-NS6" firstAttribute="leading" secondItem="Yet-iy-kEv" secondAttribute="trailing" constant="34" id="yeT-Ri-tpp"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <point key="canvasLocation" x="73.913043478260875" y="15.066964285714285"/>
